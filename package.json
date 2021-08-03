@@ -1,7 +1,6 @@
 {
   "name": "test_js",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "dependencies": {
     "js-datepicker": "^5.18.0",
@@ -12,5 +11,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }

@@ -1,17 +1,23 @@
 'use strict';
 
-let buttonModel = document.querySelector('.button-model');
-let model = document.querySelector('.modal');
+let buttonModal = document.querySelector('.button-modal');
+let modal = document.querySelector('.modal');
 let span = document.querySelector('.close-modal');
+let selectBlock = document.querySelector('.select-block');
 
-buttonModel.addEventListener('click', () => {
-   model.style.display = 'block';
+buttonModal.addEventListener('click', () => {
+   modal.style.display = 'block';
 });
 span.addEventListener('click', () => {
-   model.style.display = 'none';
+   modal.style.display = 'none';
 });
+window.onclick = function(event) {
+   if (event.target == modal) {
+      modal.style.display = "none";
+   }
+}
 const picker = datepicker('.datepicker', {
-   onHide: instance => {
-
+   onSelect: (instance, date) => {
+      selectBlock.style.display = 'block';
    }
 })

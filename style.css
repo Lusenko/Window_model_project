@@ -1,4 +1,4 @@
-.button-model {
+.button-modal {
   font-size: 18px;
   padding: 15px;
   border-radius: 10px;
@@ -7,7 +7,7 @@
   color: #fff;
 }
 
-.button-model:hover {
+.button-modal:hover {
   background-color: #ff6530;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .modal-content {
-  width: 60%;
+  width: 30%;
   height: 300px;
   margin: auto;
   background-color: white;
@@ -60,6 +60,31 @@
   display: none;
   text-align: center;
   padding-top: 70px;
+}
+.select-block .select {
+  width: 150px;
+}
+
+.show-info {
+  display: none;
+  width: 200px;
+  height: 180px;
+  background: coral;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.show-info .block-with-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.show-info .block-with-info input {
+  width: 120px;
+  margin: 0 auto;
+}
+.show-info .block-with-info p {
+  color: white;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
